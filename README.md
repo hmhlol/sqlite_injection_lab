@@ -28,6 +28,12 @@ sqlite3
 
 # Set-up
 
+It is recommanded to run the lab in virtual environment.
+
+`pip3 install virtualenv`
+`cd YOUR_LAB_DIR`
+`python3 -m venv venv`
+
 On windows: `set FLASK_APP=app.py` then `flask run` or `flask run --host=0.0.0.0 -p YOUR_PORT`
 
 On linux: `export FLASK_APP=app.py` then `flask run` or `flask run --host=0.0.0.0 -p YOUR_PORT`
