@@ -261,7 +261,7 @@ def level4():
 			else:
 				continue
 		#challenge start from here!!
-		if CheckCreds('level1',username,password) == True:
+		if CheckCreds('level4',username,password) == True:
 			message = "You th!nk there will be flag in here??"
 			return render_template("admin.html",msg=msg[random.randint(0,len(msg)-1)],alert=alert[random.randint(0,len(alert)-1)],flag=message)
 		else:
