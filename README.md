@@ -11,6 +11,7 @@ This lab is ctf style lab. You can submmit the flag you get from challenge. Ther
 Sorry for too many css files as I am training my front-end skill but I am still too bad in it :neutral_face: :neutral_face: .
 
 You can reset the database. And if you don't like the default flag, you can customize the flag.
+Please do not store any important data into database.db file. It will be deleted when you reset.
 
 ![alt_text](https://i.imgur.com/L2ttqgS.png)
 
