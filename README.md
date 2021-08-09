@@ -22,6 +22,7 @@ Feel free to dm me at [DISCORD](https://discord.com/users/604681695064490015) if
 # Requirements
 Flask
 `pip intall Flask`
+
 sqlite3
 `pip install pysqlite3`
 
