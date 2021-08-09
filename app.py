@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 from flask import Flask,request,render_template,render_template_string
 import os
 import sqlite3
