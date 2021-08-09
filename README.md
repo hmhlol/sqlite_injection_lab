@@ -19,13 +19,13 @@ Hope you enjoy the lab :cowboy_hat_face: :cowboy_hat_face: .
 
 Feel free to dm me at [DISCORD](https://discord.com/users/604681695064490015) if you have trouble in solving challenges. Your feedback are welcome.
 
-#Requirements
+# Requirements
 Flask
 `pip intall Flask`
 sqlite3
 `pip install pysqlite3`
 
-#Set-up
+# Set-up
 
 On windows: `set FLASK_APP=app.py` then `flask run` or `flask run --host=0.0.0.0 -p YOUR_PORT`
 
