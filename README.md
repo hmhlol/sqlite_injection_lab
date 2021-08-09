@@ -16,4 +16,4 @@ You can reset the database. And if you don't like the default flag, you can cust
 
 Hope you enjoy the lab :cowboy_hat_face: :cowboy_hat_face: .
 
-Feel free to dm me at [DISCORD](https://discord.com/users/604681695064490015)
+Feel free to dm me at [DISCORD](https://discord.com/users/604681695064490015) if you have trouble in solving challenges. Your feedback are welcome.
