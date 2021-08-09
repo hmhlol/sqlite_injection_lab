@@ -1,6 +1,6 @@
 # sqlite_injection_lab :syringe: :syringe:
 
-This is the sqlite blind injection lab for begineers.
+This is the sqlite blind injection lab for beginners.
 
 ![alt text](https://i.imgur.com/zYWptdn.png)
 
