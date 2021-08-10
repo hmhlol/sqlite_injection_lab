@@ -1,0 +1,115 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Tourney', cursive;
+}
+#main{
+	width: 100%;
+	height: 100vh;
+	background: url(images/level1_bg1.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.form{
+	position: relative;
+	top: 100px;
+	left: 30%;
+	border: 2px solid #C46541;
+	padding: 20px;
+	width: 400px;
+	height: 450px;
+	/*background-color: rgba(196,101,65,0.7);*/
+	background: transparent;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.form:hover{
+	background: #4D3A3D;
+}
+.form h1{
+	text-align: center;
+	font-size: 40px;
+	font-weight: 600;
+	letter-spacing: 7px;
+	color: rgb(196, 101, 65);
+	line-height: 20px;
+	margin-top: 20px;
+}
+.form form{
+	position: relative;
+	margin-top: 70px;
+	font-size: 30px;
+	color: rgb(196, 101, 65);
+}
+.form form input{
+	width: 100%;
+	height: 50px;
+	margin: 30px 0;
+	background: transparent;
+	font-size: 35px;
+	border: 1px solid #C46541;
+}
+form h2{
+	font-size: 35px;
+	font-weight: 600;
+	letter-spacing: 7px;
+	color: rgb(196, 101, 65);
+	line-height: 20px;
+}
+
+.btn{
+	width: 100%;
+	padding: 15px;
+	border: 2px solid #C46541;
+	border-radius: 10px;
+	font-size: 30px;
+	color: #C46541;
+	cursor: pointer;
+	background: transparent;
+	transition: 0.5s;
+}
+.btn:hover{
+	background: #C46541;
+	color: #F6B6BB;
+}
+.social-links{
+	position: absolute;
+	top: 30%;
+	display: flex;
+	flex-direction: column;
+}
+.fab{
+	margin: 30px 20px;
+	font-size: 30px;
+	color: #C46541;
+}
+.fab:hover{
+	animation: 1s rotate linear;
+}
+@keyframes rotate{
+	50%{
+		transform: rotate(-180deg);
+	}
+	100%{
+		transform: rotate(-360deg);
+	}
+}
+
+.animate{
+	position: absolute;
+	left: 35%;
+	top: 10px;
+	font-weight: 600;
+	font-size: 50px;
+	letter-spacing: 15px;
+	color: #C46541;
+	animation: 3s animate linear infinite;
+}
+@keyframes animate{
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}

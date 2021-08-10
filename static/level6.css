@@ -1,0 +1,86 @@
+*{
+	margin: 0;
+	padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+#main{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(rgba(242, 43, 20,0.2),rgba(242, 43, 20,0.3)),url(images/level6_bg1.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.form{
+	position: relative;
+	border: 1px solid rgba(256,256,256,0.1);
+	border-radius: 12px;
+	width: 400px;
+	height: 450px;
+	left: 20%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	background: rgba(39, 35, 32,0.4);
+	padding-left: 20px;
+}
+.form h2{
+	font-size: 30px;
+	color: #FFD73F;
+	text-align: center;
+	letter-spacing: 10px;
+	margin-top: 20px;
+}
+form input{
+	background: transparent;
+	width: 90%;
+	height: 40px;
+	font-size: 35px;
+	font-weight: 400;
+	border: 1px solid #FFD73F;
+	border-radius: 12px;
+	color:  rgba(252, 214, 67);
+}
+form h3{
+	color: #FFD73F;
+	font-size: 25px;
+	letter-spacing: 10px;
+	line-height: 20px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+.btn{
+	border: 1px solid #FFD73F;
+	background: transparent;
+	color: #FFD73F;
+	padding: 15px 20px;
+	font-size: 20px;
+	margin-top: 30px;
+	margin-left: 100px;
+	width: 150px;
+	border-radius: 12px;
+	cursor: pointer;
+}
+.btn:hover{
+	background: rgba(255, 215, 63,0.2);
+	box-shadow: 0 10px 20px 5px rgba(255, 215, 63,0.7);
+}
+.social-links{
+	position: absolute;
+	display: flex;
+	left: 20%;
+}
+.fab{
+	margin: 30px 20px;
+	font-size: 30px;
+	color: #FFD73F;
+}
+.fab:hover{
+	animation: 1s rotate linear;
+}
+@keyframes rotate{
+	50%{
+		transform: rotate(180deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}

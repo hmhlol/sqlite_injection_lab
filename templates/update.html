@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Customize flag</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/all.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='update.css')}}">
+	<script src="{{url_for('static',filename='js/typeit.min.js')}}"></script>
+	<!-- ----google-fonts---- -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+	<section id="main">
+		<h1 class="type-it">You can update default flag with your customize flag.</h1>
+		<h1 style="postion:absolute;color:green;font-size:30px;text-align:center;margin-top:5px;">{{msg}}</h1>
+		<h1 style="postion:absolute;color:red;font-size:20px;text-align:center;margin-top:5px;">{{error}}</h1>
+		<div class="form">
+			<h2>Customize flag!</h2>
+			<form method="POST" accept="/update">
+				<h3>For:</h3>
+				<fieldset required="">
+					<input type="radio" id="level" name="level" value="level1">
+					<label for="levle1">level1</label><br>
+					<input type="radio" id="level" name="level" value="level2">
+					<label for="levle1">level2</label><br>
+					<input type="radio" id="level" name="level" value="level3">
+					<label for="levle1">level3</label><br>
+					<input type="radio" id="level" name="level" value="level4">
+					<label for="levle1">level4</label><br>
+					<input type="radio" id="level" name="level" value="level5">
+					<label for="levle1">level5</label><br>
+					<input type="radio" id="level" name="level" value="level6">
+					<label for="levle1">level6</label><br><br>
+				</fieldset>
+				<h4>Your flag value</h3>
+				<input type="text" name="flag" placeholder="flag{y0ur_fl@g_text_h3r3}" id="flag" required="">
+
+				<button type="submit" class="btn">Submit</button>
+			</form>
+		</div>
+		<div class="social-links">
+				<a href="https://www.facebook.com/wannab3hack3r.m3"><i class="fab fa-facebook"></i></a>
+				<a href="https://discord.com/users/604681695064490015"><i class="fab fa-discord"></i></a>
+				<a href="https://www.twitter.com/HMHish3r3"><i class="fab fa-twitter"></i></a>
+				<a href="https://github.com/hmhlol"><i class="fab fa-github"></i></a>
+			</div>
+	</section>
+
+	<script>
+		new TypeIt('.type-it', {
+       		 speed: 80, 
+       		 waitUntilVisible: true,
+       		 afterComplete: function (step, instance) {
+			    instance.destroy();
+			}
+     	}).go();
+	</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Quantico', sans-serif;
+}
+#main{
+	width: 100%;
+	height: 100vh;
+	background: url(images/level2_bg1.png);
+	background-size: cover;
+	background-position: center;
+}
+.animate{
+	position: absolute;
+	font-size: 30px;
+	font-weight: 500;
+	letter-spacing: 10px;
+	line-height: 20px;
+	left: 20%;
+	top: 10%;
+	color:  #393846;
+	animation: 3s animate linear infinite;
+}
+@keyframes animate{
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.form{
+	position: relative;
+	width: 500px;
+	height: 400px;
+	left: 100px;
+	top: 20%;
+	padding: 20px 0px;
+}
+.form h2{
+	text-align: center;
+	color: #393846;
+	font-size: 30px;
+	font-weight: 600;
+	letter-spacing: 10px;
+}
+.form form input{
+	width: 80%;
+	margin: 0px 40px;
+	height: 40px;
+	border: 1px solid  #393846;
+	border-radius: 10px;
+	background: transparent;
+	font-size: 35px;
+}
+.form form h3{
+	font-size: 25px;
+	font-weight: 500;
+	letter-spacing: 10px;
+	color: #393846;
+	margin: 0px 40px;
+	margin-top: 50px;
+}
+.btn{
+	margin: 40px 150px;
+	border: 2px solid #FDAA93;
+	padding: 15px 20px;
+	background-color: transparent;
+	width: 30%;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	color: #393846;
+	box-shadow: 0 0 20px 0 rgba(57, 56, 70,0.2);
+	transition: 0.5s;
+}
+.btn:hover{
+	background: rgba(253, 170, 147,0.7);
+}
+.social-links{
+	position: absolute;
+	top: 25%;
+	display: flex;
+	flex-direction: column;
+}
+.fab{
+	margin: 30px 20px;
+	font-size: 30px;
+	color: #393846;
+}
+.fab:hover{
+	animation: 1s rotate linear;
+}
+@keyframes rotate{
+	50%{
+		transform: rotate(-180deg);
+	}
+	100%{
+		transform: rotate(-360deg);
+	}
+}

@@ -1,0 +1,90 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poiret One', cursive;
+}
+#main{
+	width: 100%;
+	height: 120vh;
+	background: linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3)),url(images/admin_bg.jpg);
+	background-size: cover;
+	background-position: center;
+}
+#head{
+	border: 2px solid rgba(255,255,0,0.7);
+	position: relative;
+	left: 50%;
+	top: 30px;
+	transform: translateX(-50%);
+	width: 500px;
+	cursor: pointer;
+	border-radius: 10px;
+	background: transparent;
+	animation: 4s animate linear infinite;
+	margin-bottom: 100px;
+}
+
+#head h1{
+	color: rgba(255,255,0,0.7);
+	text-align: center;
+	font-size:	30px;
+	font-weight: 600;
+	padding:  30px 0;
+	letter-spacing: 10px;
+	line-height: 40px;
+
+}
+@keyframes animate{
+	50%{
+		background-color: rgba(255,255,0,0.2);
+		box-shadow: 0 0 20px 0 rgba(255,255,0,0.2);
+	}
+	100%{
+		background: transparent;
+	}
+}
+#content{
+	margin-top: 50px;
+	text-align: left;
+	width: 80%;
+	height: 400px;
+	padding-left: 8%;
+	margin-left: 60px;
+}
+#content h2{
+	color: rgb(255,255,0);
+	line-height: 30px;
+	letter-spacing: 5px;
+	font-size: 30px;
+	margin: 40px 0px;
+}
+.social-links{
+	position: absolute;
+	top: 25%;
+	display: flex;
+	flex-direction: column;
+}
+.fab{
+	margin: 30px 20px;
+	font-size: 30px;
+	color: #ff0;
+}
+.fab:hover{
+	animation: 1s rotate linear;
+}
+@keyframes rotate{
+	50%{
+		transform: rotate(-180deg);
+	}
+	100%{
+		transform: rotate(-360deg);
+	}
+}
+@keyframes rotate{
+	50%{
+		transform: rotate(180deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}

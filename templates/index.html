@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SQLite blind injection lab</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/all.css')}}">
+	<script src="{{url_for('static',filename='js/typeit.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/smooth-scroll.polyfills.min.js')}}"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- google-fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+
+	<script src="https://kit.fontawesome.com/7ab1de848b.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+	
+</head>
+<body>
+	<section id="main">
+		<div class="head">
+			<h1 class="type-it">Welcome to<br><br>sqlite blind injection lab<br></h1>
+			<div>
+				<a href="/reset"><button class="btn">RESET DB</button></a>
+				<a href="#challenges"><button class="btn">Challenges</button></a>
+				<a href="/update"><button class="btn">Customize flag???</button></a>
+			</div>
+		</div>
+	</section>
+	<!-- ---challenges---- -->
+
+	<section id="challenges">
+		<h1 class="type-it1">./Challenges</h1>
+		<div class="flag-form">
+			<form method="POST" action="/submit">
+				<input type="text" name="flag" placeholder="flag{Your_aw3s0me_fl@g_t3xt}">
+				<button type="Submit" class="flag-btn">Submit flag</button>
+			</form>
+		</div>
+		<h1 style="color:green;font-size:30px;text-align:center;margin-top:30px;">{{msg}}</h1>
+		<h1 style="color:red;font-size:20px;text-align:center;margin-top:30px;">{{error}}</h1>
+		<div class="container">
+			<div class="content">
+				<h1>level1</h1>
+				<h3>Challenge description</h3><i class="fas fa-arrow-circle-down"></i>
+				<p>I learned sqlite yesterday. So I create a login portal with my favourite language python. I think it is very secure becuase I used very strong password for admin. Can you log in???</p>
+				<a href="/level1"><button class="btn">Go</button></a>
+			</div>
+			<div class="content">
+				<h1>level2</h1>
+				<h3>Challenge description</h3><i class="fas fa-arrow-circle-down"></i>
+				<p>I am very impressed that you can log in the previous portal. So I create new portal. I add the fliter in one of the parameters because I am too lazy to add it on both. I think you can't bypass this! or is it??? </p>
+				<a href="/level2"><button class="btn">Go</button></a>
+			</div>
+			<div class="content">
+				<h1>level3</h1>
+				<h3>Challenge description</h3><i class="fas fa-arrow-circle-down"></i>
+				<p>You bypass it again? I realized that I should add filter on both parameters because you are too good in sqlite injection. Try to bypass this. </p>
+				<a href="/level3"><button class="btn">Go</button></a>
+			</div>
+			<div class="content">
+				<h1>level4</h1>
+				<h3>Challenge description</h3><i class="fas fa-arrow-circle-down"></i>
+				<p>Your warmup levels are end. The game is start now! There is no flag if you can bypass it because I can remember my password. Try harder! </p>
+				<a href="/level4"><button class="btn">Go</button></a>
+			</div>
+			<div class="content">
+				<h1>level5</h1>
+				<h3>Challenge description</h3><i class="fas fa-arrow-circle-down"></i>
+				<p>I add filter on both parmeters. Try to get my secure password!</p>
+				<a href="/level5"><button class="btn">Go</button></a>
+			</div>
+			<div class="content">
+				<h1>level6</h1>
+				<h3>Challenge description</h3><i class="fas fa-arrow-circle-down"></i>
+				<p>As this is final challenge, I put all words that are used in sqlite as blacklists. I bet you can't exploit this portal! I got you lollll!!!!!</p>
+				<a href="/level6"><button class="btn">Go</button></a>
+			</div>
+		</div>
+		<div class="social-links">
+			<a href="https://www.facebook.com/wannab3hack3r.m3"><i class="fab fa-facebook"></i></a>
+			<a href="https://discord.com/users/604681695064490015"><i class="fab fa-discord"></i></a>
+			<a href="https://www.twitter.com/HMHish3r3"><i class="fab fa-twitter"></i></a>
+			<a href="https://github.com/hmhlol"><i class="fab fa-github"></i></a>
+
+		</div>
+	</section>
+<script >
+	new TypeIt('.type-it', {
+       		 speed: 80,
+       		 afterComplete: function (step, instance) {
+			    instance.destroy();
+			}
+     	}).go();
+	new TypeIt('.type-it1', {
+       		 speed: 80,
+       		 startDelay: 500,
+  			 waitUntilVisible: true,
+  			 loop: true,
+  			 loopDelay: 3000
+     	}).go();
+	var scroll = new SmoothScroll('a[href*="#"]',{
+			speed: 500,
+			speedAsDuration: true
+		});
+</script>
+</body>
+</html>
