@@ -138,7 +138,7 @@ def submit():
 		submit_flag = request.values['flag']
 		real_flag = []
 		for i in range(1,7):
-			real_flag.append(base64.b64decode(data[f'level{i}'][::-1]).decode('utf-8'))
+			real_flag.append(get_flag(f'level{i}',1))
 		
 		if submit_flag in submitted_flag:
 			return render_template("index.html",msg='', error = 'You have already solved that challenge!')
